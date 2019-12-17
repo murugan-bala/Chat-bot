@@ -1,0 +1,6 @@
+tracker_store:
+    type: mongod
+    url: mongodb://localhost:27017>
+    db: chat_db
+    collection: logcol
+  

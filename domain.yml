@@ -1,0 +1,272 @@
+
+intents:
+- greet
+- LIVEWIRE
+- Course_Launch_Issue
+- User_Login_Issue
+- Course_Next_Button
+- Course_Creation
+- Asssessmet_Page_Activity
+- acces_livewire
+- livewire_cours
+- app_LiveWire
+- goodbye
+- mood_affirm
+- mood_deny
+- mood_great
+- botname
+- helpuser
+- botlanguage
+- botage
+- allcourse
+- my_enroll_course
+- technical_course
+- comp_training
+- softskill_course
+- launch_course
+- enroll_course
+- start_course
+- course_register
+- self_register
+- already_reg
+- course_search
+- specific_cours
+- global_search
+- certificate
+- list_certificate
+- certificate_issue
+- transcript
+- course_complt_issue
+- issue_comp_course
+- Course_Prerequisite
+- course_engine
+- Recommended_Course
+- Course_Create
+- Email_Trigger
+- Training_Request
+- Enrolment
+- Course_Assignment 
+- mood_unhappy
+- java_search
+- paper_search
+- enroll
+- inform
+
+slots:
+  paper_type:
+    type: text
+  enroll_type:
+    type: text
+  link:
+    type: text
+  authors:
+    type: text
+        
+entities:
+- paper_type
+- enroll_type
+
+actions:
+- utter_greet
+- utter_livewire
+- utter_course_launch_issue
+- utter_user_login_issue
+- utter_course_next_button
+- utter_course_creation
+- utter_assesment_page_activity
+- utter_access_livewire
+- utter_livewire_cours
+- utter_app_livewire
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_unclear
+- utter_botname
+- utter_helpuser
+- utter_botlang
+- utter_botage
+- utter_all_course
+- utter_my_enroll_Course
+- utter_technical_Course
+- utter_completed_Course
+- utter_softskill_course
+- utter_launch_course
+- utter_enroll_course
+- utter_start_course
+- utter_course_register
+- utter_self_register
+- utter_already_reg
+- utter_course_search
+- utter_specific_cours
+- utter_global_search
+- utter_certificate
+- utter_list_certificate
+- utter_certificate_issue
+- utter_transcript
+- utter_course_complt_issue
+- utter_issue_comp_course
+- utter_Course_Prerequisite
+- utter_course_engine
+- utter_Recommended_Course
+- utter_Course_Create
+- utter_Email_Trigger
+- utter_Training_Request
+- utter_Enrolment
+- utter_Course_Assignment 
+- utter_ask_picture
+- utter_default
+- action_paper_search
+- action_enroll
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+    buttons:
+    - title: "great"
+      payload: "great"
+    - title: "super sad"
+      payload: "super sad"
+  
+  utter_livewire:
+  - text: "Sify livewire is a e-Learning application for managing training and educational records and software for distributing courses over the Internet with features for online collaboration. <ctag>Do you want to access Livewire?</ctag>"
+  
+  utter_user_login_issue:
+  - text: "Sify Livewire is completely integrated with your (Company) AD system. In order to get logged into livewire portal please use your AD credentials. For most of the cases your AD credentials is nothing but your corporate email id and your system password (System which is provided by company). Incase issue persists please reach out to your (company) IT team."
+  
+  utter_course_next_button:
+  - text: "We strongly recommend you view all the information of current slide/page or else next button may not enabled for you. You should not skip any contents of the slide."
+  
+  utter_course_creation:
+  - text: "Forwarded to project team and resolved"
+  
+  
+  utter_assesment_page_activity:
+  - text: "Assessments can consists of multiple questions with each having more than one answer options. Options may be single choice demoted by radio buttons or multiple choices denoted by check boxes.You can select only one option if you see raido buttons and multiple options if there are check boxes"
+  
+  
+  utter_course_launch_issue:
+  - text: "If you are trying the launch a course or an asssessment and see an exception page or a page not found error, please clear your browser cache and retry. Useful link to watch how to clear your browser cache. https://www.youtube.com/results?search_query=how+to+clear+browser+cache "
+  
+  utter_access_livewire:
+  - text: "Livewire can be access via  http://livewire.com/ "
+  
+  utter_livewire_cours:
+  - text: "Kindly click on the Course Menu - Course List to access the courses"
+  
+  utter_app_livewire:
+  - text: "Application of livewire is  ...   "
+  
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_unclear:
+  - text: "I am not sure what you are aiming for."
+  
+  utter_happy:
+  - text: "Great ! carry on...."
+
+  utter_goodbye:
+  - text: "Bye "
+  
+  utter_botname:
+  - text: "My name is SIFYBOT , and i am a chatbot "
+  
+  utter_helpuser:
+  - text: "sure i makes you feel good "
+  
+  utter_botlang:
+  - text: "I can understand Only English "
+  
+  utter_botage:
+  - text: "Age has no meaning , because i am Virtual . i was created in september-2019. But i am probabaly already smater than you "
+  
+  utter_all_course:
+  - text: "All course..."
+  
+  utter_my_enroll_Course:
+  - text: "My enroll course"
+  
+  utter_technical_Course:
+  - text: "technical course.."
+  
+  utter_completed_Course:
+  - text: "completed course"
+  
+  utter_softskill_course:
+  - text: "softskill course"
+  
+  utter_launch_course:
+  - text: "launch course"
+  
+  utter_enroll_course:
+  - text: "enroll course"
+  
+  utter_start_course:
+  - text: "start course"
+  
+  utter_course_register:
+  - text: "<ctag>Do you want to self register for a course?</ctag>, <ctag>Do you want to check the courses which you had already registered?</ctag> "
+  
+  utter_self_register:
+  - text: "Kindly get into All Courses tab available under Course List and click on the details button upon which you will find enroll button . Click on Enrol button to register for the course."
+ 
+  utter_already_reg:
+  - text: "Kindly click on the Enroled Course Menu available under Course List to access the list of the courses which you have been enrolled/registered for."
+  
+  utter_course_search:
+  - text: "<ctag>Do you want to search for a specific course in LiveWire?</ctag>, <ctag>DO you want to perform a global search in LiveWire?</ctag>"
+ 
+  utter_specific_cours:
+  - text: "Kindly click on the Course Menu- Course List to access courses. Upon which you will have search field, where in you can provide the course title and click on search icon."
+  
+  utter_global_search:
+  - text: "Kindly provide the search value in the menu line and click on the search icon. This will share the search results globally."
+  
+  utter_certificate:
+  - text: "<ctag>Do you want to view the list of certificates which you have gained?</ctag>"
+  
+  utter_list_certificate:
+  - text: "Kindly click on the Report Menu under which you will have learner dashboard which will enable to get the list of certificates gained by the user"
+  
+  utter_certificate_issue:
+  - text: "Kindly check with your LMS administrator if you have any certificates tagged to Completed Courses."
+  
+  utter_transcript:
+  - text: "Kindly click on the Course Menu - Course List to access the list of completed courses. You will be finding the learning transcripts in Completed Courses."
+  
+  utter_course_complt_issue:
+  - text: "Kindly complete all learning modules tagged to the course for the course to be completed."
+  
+  utter_issue_comp_course:
+  - text: "Kindly reach out to LMS administrator to check for the completion of the course."
+  
+  
+  utter_Course_Prerequisite:
+  - text: "If a course that has retraining on it, as well as a prerequisite: the prerequiste will not be reassigned when the retraining starts. This is because the prerequisite will have already been met the first time the user took the course."
+  
+  utter_course_engine:
+  - text: "You will be able to search for any course name searches with the course search engine.If you still have any issues in identifying the course,please reach out to LMS Administrator."
+ 
+  utter_Recommended_Course:
+  - text: "You will find your recommended courses under Course List --> Recommended Course tab. If you still have any issues in identifying the recommended tab, please reach out to LMS Support."
+ 
+  utter_Course_Create:
+  - text: "Create of courses is a permission which LMS Administrator will need to assign it to your userid. Kindly check with LMS Administrator or reach out to our LMS Support on this assistance."
+ 
+  utter_Email_Trigger:
+  - text: "Email notifications will need to be configured in the system for the trigger to the learners. Kindly reach out to LMS Administrator or LMS Support who can assist you."
+  
+  utter_Training_Request:
+  - text: "Kindly reach out to LMS administrator or click on the Contact button to request for your learning program."
+ 
+  utter_Enrolment:
+  - text: "Kindly reach out to LMS Administrator on the learning assignments."
+  
+  utter_Course_Assignment:
+  - text: "Kindly click on the Courses --> Calendar, where in you will find a day /week/month view of the courses assigned to you."
+  
+  utter_ask_picture:
+  - text: "To cheer you up, Don't loose your hope , all is well "
+  
+  utter_default:
+  - text: "I am sorry, I am yet to learn about this. you may ask me something about  <ctag>Livewire</ctag> instead ."
